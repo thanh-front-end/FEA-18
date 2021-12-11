@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <title>Phong Vu</title>
+        <link rel="shortcut icon" href="./img/logo.svg"/>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Bootstrap/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="./FontAwesome/docs/css/all.css">
+        <!--Style CSS-->
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/sanpham.css">
+        <link rel="stylesheet" href="./CSS/ripple_loader.css">
+        <link rel="stylesheet" href="./CSS/body.css">
+        <link rel="stylesheet" href="./CSS/media.css">
+        <link rel="stylesheet" href="./CSS/pagination.css">
+        <link rel="stylesheet" href="./CSS/gioHang.css">
+    
+        <!-- Phần js -->
+        <!-- <script src="/js/goToTop.js" type="text/javascript"></script>
+        <script src="/js/Jquery/Jquery.min.js" type="text/javascript"></script>
+        <script src="/js/sanpham.js" type="text/javascript"></script> -->
+        
+      </head>
+  <body>
+    <header>
+        <div class="header-text-top">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between text-13">
+                    <div class="address-left clearfix d-flex">
+                        <!-- Ripple loader -->
+                        <div class="ripple-loader-wrapper">
+                            <div class="ripple-loader">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <p class="m-0">
+                            <marquee>
+                                HCM: 65 Đường Huỳnh Thúc Kháng, Bến Nghé, Quận 1
+                            </marquee>
+                        </p>
+                    </div>
+                    <div class="text-title">
+                        <a href="#" class="link-text">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <div class="spacer"></div>
+                            <span>Hệ thống Showroom</span>
+                        </a>
+                        <a href="#" class="link-text">
+                            <i class="fa fa-headset"></i>
+                            <div class="spacer"></div>
+                            Tư vấn mua hàng:  
+                            <span class="highlight">1800 6867</span>
+                        </a>
+                        <a href="#" class="link-text">
+                            <i class="fa fa-headset"></i>
+                            <div class="spacer"></div>
+                            CSKH:  
+                            <span class="highlight">1800 6867</span>
+                        </a>
+                        <a href="#" class="link-text">
+                            <i class="fa fa-newspaper"></i>
+                            <div class="spacer"></div>
+                            <span>Tin công nghệ</span>
+                        </a>
+                        <a href="#" class="link-text">
+                            <i class="fa fa-cog fa-spin"></i>
+                            <div class="spacer"></div>
+                            <span>Trung tâm bảo hành</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand navbar-light bg-faded ">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="Phong Vũ" class="logo"/>
+                </a>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-align-justify"></i>
+                        Danh mục sản phẩm
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">
+                        Máy tính xách tay - laptop
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Máy tính - máy chủ
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Thiết bị văn phòng
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Linh kiện máy tính
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Màn hình máy tính
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Gaming Gear
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Tivi - Màn hình TV
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Thiết bị mạng
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Máy ảnh - Máy quay
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Hi-End Gaming
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Phụ kiện laptop - Khác
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Nhà thông minh
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Giải pháp doanh nghiệp
+                      </a>
+                    </div>
+                  </div>
+                <form class="form-inline my-2 my-lg-0 my-with">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Nhập từ khóa cần tìm">
+                    <button class="btn btn-outline-success my-2 my-sm-0 form-button" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <div class="header-icon-right">
+                    <div class="nav-items items">
+                        <a href="#" class="items-text">
+                            <i class="fas fa-bolt icon-size"></i>
+                            <div></div>
+                            Khuyến mãi
+                        </a>
+                    </div>
+                    <div class="nav-items items">
+                        <a href="#" class="items-text">
+                            <i class="fas fa-bell icon-size"></i>
+                            <div></div>
+                            Thông báo
+                        </a>
+                    </div>
+                    <div class="nav-items items">
+                        <a href="#" class="items-text">
+                            <i class="fas fa-tools icon-size"></i>
+                            <div></div>
+                            Sữa chữa
+                        </a>
+                    </div>
+                    <div class="nav-items items">
+                        <a href="./dangnhap.html" class="items-text">
+                            <i class="fas fa-user-circle icon-size"></i>
+                            <div></div>
+                            Đăng nhập
+                        </a>
+                    </div>
+                    <div class="nav-items items">
+                        <a href="./giohang.html" class="items-text">
+                            <i class="fas fa-shopping-cart icon-size"></i>
+                            <div></div>
+                            Giỏ hàng
+                        </a>
+                    </div>
+                </div>    
+            </nav>
+        </div>
+    </header>
+    <section class="home-sp">
+        <div class="container">
+            <div class="row">
+                <div class="container icon-link">
+                    <a href="./trangchu.html" class="icon-row">
+                        <i class="fa fa-home"></i>
+                    </a>
+                    <i class="fa fa-angle-right fa-ic"></i>
+                    <span class="tt-sp">
+                        Laptop Asus TUF Dash F15 FX516PE-HN005T (Core i7-11370H | 8GB | 512GB | RTX 3050Ti 4GB | 15.6 inch FHD | Win 10 | Xám) 
+                    </span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="wrapper-left">
+                    <div class="box-wrapper">
+                        <div class="row">
+                            <div class="pd-wrap">
+                                <div class="container"> 
+                                    <div class="card"> 
+                                        <div class="container-fliud"> 
+                                            <div class="wrapper row"> 
+                                                <div class="preview col-md-6"> 
+                                                    <div class="preview-pic tab-content"> 
+                                                        <div class="tab-pane active" id="pic-1">
+                                                            <img src="./img/HinhSp/sp-1.jpg" alt=""/>
+                                                        </div> 
+                                                        <div class="tab-pane" id="pic-2">
+                                                            <img src="./img/HinhSp/lap-1.png" alt="">
+                                                        </div> 
+                                                        <div class="tab-pane" id="pic-3">
+                                                            <img src="./img/HinhSp/sp-3.jpg" alt="">
+                                                        </div> 
+                                                        <div class="tab-pane" id="pic-4">
+                                                            <img src="./img/HinhSp/sp-4.jpg" alt="">
+                                                        </div> 
+                                                        <div class="tab-pane" id="pic-5">
+                                                            <img src="./img/HinhSp/sp-5.jpg" alt="">
+                                                        </div> 
+                                                    </div> 
+                                                    <ul class="preview-thumbnail nav nav-tabs">
+                                                        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="./img/HinhSp/sp-1.jpg" alt="sp-1"></a>
+                                                        </li> 
+                                                        <li><a data-target="#pic-2" data-toggle="tab"><img src="./img/HinhSp/lap-1.png" alt="sp-2"></a>
+                                                        </li> 
+                                                        <li><a data-target="#pic-3" data-toggle="tab"><img src="./img/HinhSp/sp-3.jpg" alt="sp-3"></a>
+                                                        </li> 
+                                                        <li><a data-target="#pic-4" data-toggle="tab"><img src="./img/HinhSp/sp-4.jpg" alt="sp-4"></a>
+                                                        </li> 
+                                                        <li><a data-target="#pic-5" data-toggle="tab"><img src="./img/HinhSp/sp-5.jpg" alt="sp-5"></a>
+                                                        </li> 
+                                                    </ul>
+                                                    <div class="ke-ngang"></div>
+                                                    <div class="ct-sp">
+                                                        <div class="ct-tt-sp">
+                                                            - CPU: AMD Ryzen 5 4600H 
+                                                            <br>
+                                                            - Màn hình: 15.6" IPS (1920 x 1080), 120Hz
+                                                            <br>
+                                                            - RAM: 1 x 8GB DDR4 3200MHz 
+                                                            <br>
+                                                            - Đồ họa: NVIDIA GeForce GTX 1650 4GB GDDR6 / AMD Radeon Graphics
+                                                            <br>
+                                                            - Lưu trữ: 256GB SSD M.2 NVMe / 
+                                                            <br>
+                                                            - Hệ điều hành: Windows 10 Home 64-bit
+                                                            <br>
+                                                            - Pin: 3 cell 45 Wh Pin liền
+                                                            <br>
+                                                            - Khối lượng: 2.2 kg
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="details col-md-6">
+                                                    <h3 class="product-title">Laptop Asus TUF Dash F15 FX516PE-HN005T (Core i7-11370H | 8GB | 512GB | RTX 3050Ti 4GB | 15.6 inch FHD | Win 10 | Xám)</h3> 
+                                                    <div class="row rows">
+                                                        Thương hiệu
+                                                        <a href="#" class="th-sp">Asus</a>
+                                                        <span class="gach"></span>
+                                                        SKU:
+                                                        <!---->
+                                                        210603066
+                                                    </div>
+                                                    <div class="rating"> 
+                                                        <div class="stars"> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> 
+                                                        <span class="review-no">123 đánh giá</span>
+                                                        <div class="lp-sp-price">
+                                                            <h4 class="price">8.690.000 VND</h4>
+                                                            <span class="del-price">10.000.000 VND</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="khuyen-mai">
+                                                        <div class="giam-gia row">
+                                                            <img class="km-img" alt="" src="./img/download.png"/>
+                                                            <div class="text-gg">
+                                                            <p class="gg-p"> Giảm giá </p>
+                                                            <p class="gg-pp">Giảm giá trực tiếp <span class="gg-p">1.000.000đ</span> <span class="gg-ad">ĐÃ ÁP DỤNG</span> </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ke-ngang"></div>
+                                                    <div class="giam-gia row">
+                                                        <img class="km-img" alt="" src="./img/download.png"/>
+                                                        <div class="text-gg">
+                                                            <p class="gg-p"> Quà tặng kèm </p>
+                                                            <div>
+                                                                <div class="row">
+                                                                    <img class="balo" src="./img/balo.webp" alt=""/>
+                                                                    <span class="so-luong-balo">x1</span>
+                                                                    <span class="text-balo">Ba lô Asus</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sl-sp">
+                                                    <div>Số lượng:</div>
+                                                    <div class="so-luong">
+                                                        <input type="button" value="-" onclick="tru()" class="btn-so-luong"/>
+                                                        <input type="text" value="1" id="textBox" class="btn-textBox"/>
+                                                        <input type="button" onclick="cong()" value="+" class="btn-so-luong"/>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="action-btn">
+                                                    
+                                                    <button class="ac-btn" onclick="window.location.href = 'giohang.html#gio-hang';">
+                                                            <strong>MUA NGAY</strong>
+                                                    </button>
+                                                    <button class="act-btn">
+                                                        <strong>THÊM VÀO GIỎ HÀNG</strong>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="gh-sp">
+                                                <div class="gh-container">
+                                                    <div class="gh-body">
+                                                        <div class="row">
+                                                            <img src="./img/xe-giao-hang.svg" alt=""/>
+                                                            <div class="gh-text">Sản phẩm được miễn phí giao hàng</div>
+                                                        </div>
+                                                        <div class="ke-ngang"></div>
+                                                        <div>
+                                                            <div class="font-text">Chính sách bán hàng</div>
+                                                            <div class="row css-bottom">
+                                                                <img src="./img/xe-tai-gh.svg" alt=""/>
+                                                                <div class="css-text">Miễn phí giao hàng cho đơn hàng từ 800K</div>
+                                                            </div>
+                                                            <div class="row css-bottom">
+                                                                <img src="./img/bao-ve.svg" alt=""/>
+                                                                <div class="css-text">Cam kết hàng chính hãng 100%</div>
+                                                            </div>
+                                                            <div class="row css-bottom">
+                                                                <img src="./img/doi-tra.svg" alt=""/>
+                                                                <div class="css-text">Đổi trả trong vòng 10 ngày</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="size-css">
+                                                            <div class="font-text">Dịch vụ khác</div>
+                                                            <div class="row css-bottom">
+                                                                <img src="./img/sua-chua.svg" alt=""/>
+                                                                <div class="css-text">Sữa chữa đồng giá 150.000đ</div>
+                                                            </div>
+                                                            <div class="row css-bottom">
+                                                                <img src="./img/icon-lap.svg" alt=""/>
+                                                                <div class="css-text">Vệ sinh máy tính, laptop</div>
+                                                            </div>
+                                                            <div class="row css-bottom">
+                                                                <img src="./img/doi-tra.svg" alt=""/>
+                                                                <div class="css-text">Bảo hành tại nhà</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="chi-tiet">
+                <div class="mo-ta">
+                    <div class="card-header css-0">
+                        <div class="box-title">
+                            <div class="title">
+                                <div class="title-rim"></div>
+                                <div class="title-text">
+                                    <p style="vertical-align: inherit;">
+                                        Mô tả sản phẩm
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>
+                        Đang cập nhật
+                    </h6>
+                </div>
+                <div class="thong-so">
+                    <div class="card-header css-0">
+                        <div class="box-title">
+                            <div class="title">
+                                <div class="title-rim"></div>
+                                <div class="title-text">
+                                    <p style="vertical-align: inherit;">
+                                        Thông số kỹ thuật
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ts-ct position-relative">
+                        <div class="row s-padding">
+                            <span class="col-4">Thương hiệu</span>
+                            <span class="col">Asus</span>
+                        </div>
+                        <div class="row colors-1 s-padding">
+                            <span class="col-4">Bảo hành</span>
+                            <span class="col">24</span>
+                        </div>
+                        <div class="row s-padding">
+                            <span class="col-4">Bộ vi xử lí</span>
+                        </div>
+                        <div class="row colors-1 s-padding">
+                            <span class="col-4">Bộ vi xử lí</span>
+                            <span class="col">Intel® Core™ i7-11370H</span>
+                        </div>
+                        <div class="row s-padding">
+                            <span class="col-4">Tốc độ</span>
+                            <span class="col">upto 4.80GHz, 4 cores 8 threads</span>
+                        </div>
+                        <div class="row colors-1 s-padding">
+                            <span class="col-4">Bộ nhớ đệm</span>
+                            <span class="col">12MB Cache</span>
+                        </div>
+                        <div class="row s-padding">
+                            <span class="col-4">Bộ nhớ (RAM)</span>
+                        </div>
+                        <div class="row colors-1 s-padding">
+                            <span class="col-4">Dung lượng</span>
+                            <span class="col">8GB DDR4 3200Mhz</span>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="item-button" data-fancybox="" data-src="#pro-spec"> XEM THÊM THÔNG SỐ <i class="fa fa-angle-double-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="box-title-container">
+                <div>
+                    <div class="box-title">
+                        <div class="title">
+                            <div class="title-rim"></div>
+                            <h3 class="title-text">Sản phẩm cùng hãng</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chi tiết sản phẩm -->
+                <div class="p-container custom-nav owl-carousel owl-theme owl-loaded owl-drag cs-bottom">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item active">
+                                <div class="p-item banner-under-slider">
+                                    <a href="#" class="p-img hover-rotate">
+                                        <img src="./img/HinhSp/lap-1.png" alt="Laptop Asus"/>
+                                        <span class="icon-new">New</span>
+                                    </a>
+                                    <div class="p-text">
+                                        <a href="#" class="p-name">
+                                            Laptop Asus TUF Dash F15 FX516PE-HN005T (Core i7-11370H | 8GB | 512GB | RTX 3050Ti 4GB | 15.6 inch FHD | Win 10 | Xám) 
+                                        </a>
+                                        <div class="price-container">
+                                            <del class="p-old-price">10.000.000 VND</del>
+                                            <span class="p-discount"> -2% </span>
+                                            <span class="p-price"> 8.690.000 VND </span>
+                                        </div>
+                                        <div class="p-special-container">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            150 đánh giá
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="p-item banner-under-slider">
+                                    <a href="#" class="p-img hover-rotate">
+                                        <img src="./img/HinhSp/lap-1.png" alt="Laptop Asus"/>
+                                        <span class="icon-new">New</span>
+                                    </a>
+                                    <div class="p-text">
+                                        <a href="#" class="p-name">
+                                            Laptop Asus TUF Dash F15 FX516PE-HN005T (Core i7-11370H | 8GB | 512GB | RTX 3050Ti 4GB | 15.6 inch FHD | Win 10 | Xám) 
+                                        </a>
+                                        <div class="price-container">
+                                            <del class="p-old-price">10.000.000 VND</del>
+                                            <span class="p-discount"> -2% </span>
+                                            <span class="p-price"> 8.690.000 VND </span>
+                                        </div>
+                                        <div class="p-special-container">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            150 đánh giá
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="p-item banner-under-slider">
+                                    <a href="#" class="p-img hover-rotate">
+                                        <img src="./img/HinhSp/lap-1.png" alt="Laptop Asus"/>
+                                        <span class="icon-new">New</span>
+                                    </a>
+                                    <div class="p-text">
+                                        <a href="#" class="p-name">
+                                            Laptop Asus TUF Dash F15 FX516PE-HN005T (Core i7-11370H | 8GB | 512GB | RTX 3050Ti 4GB | 15.6 inch FHD | Win 10 | Xám) 
+                                        </a>
+                                        <div class="price-container">
+                                            <del class="p-old-price">10.000.000 VND</del>
+                                            <span class="p-discount"> -2% </span>
+                                            <span class="p-price"> 8.690.000 VND </span>
+                                        </div>
+                                        <div class="p-special-container">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            150 đánh giá
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="p-item banner-under-slider">
+                                    <a href="#" class="p-img hover-rotate">
+                                        <img src="./img/HinhSp/lap-1.png" alt="Laptop Asus"/>
+                                        <span class="icon-new">New</span>
+                                    </a>
+                                    <div class="p-text">
+                                        <a href="#" class="p-name">
+                                            Laptop Asus TUF Dash F15 FX516PE-HN005T (Core i7-11370H | 8GB | 512GB | RTX 3050Ti 4GB | 15.6 inch FHD | Win 10 | Xám) 
+                                        </a>
+                                        <div class="price-container">
+                                            <del class="p-old-price">10.000.000 VND</del>
+                                            <span class="p-discount"> -2% </span>
+                                            <span class="p-price"> 8.690.000 VND </span>
+                                        </div>
+                                        <div class="p-special-container">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            150 đánh giá
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="p-item banner-under-slider">
+                                    <a href="#" class="p-img hover-rotate">
+                                        <img src="./img/HinhSp/lap-1.png" alt="Laptop Asus"/>
+                                        <span class="icon-new">New</span>
+                                    </a>
+                                    <div class="p-text">
+                                        <a href="#" class="p-name">
+                                            Laptop Asus TUF Dash F15 FX516PE-HN005T (Core i7-11370H | 8GB | 512GB | RTX 3050Ti 4GB | 15.6 inch FHD | Win 10 | Xám) 
+                                        </a>
+                                        <div class="price-container">
+                                            <del class="p-old-price">10.000.000 VND</del>
+                                            <span class="p-discount"> -2% </span>
+                                            <span class="p-price"> 8.690.000 VND </span>
+                                        </div>
+                                        <div class="p-special-container">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            150 đánh giá
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section">
+            <div class="box-title-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer">
+                                <h6 class="footer-title">Hỗ trợ khách hàng</h6>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Thẻ ưu đãi
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Trung tâm bảo hành
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Thanh toán và giao hàng
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Dịch vụ sửa chửa và bảo trì
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer">
+                                <h6 class="footer-title">Cộng đồng Phong Vũ</h6>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square"></i>
+                                        Phong Vũ Việt Nam
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                        Phong Vũ Media
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram-square"></i>
+                                        Phong Vũ Instagram
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fa fa-headset"></i>
+                                        Gọi mua hàng: 
+                                        <span class="cl-phone"> 1800 6867</span> (Miễn phí)
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fa fa-headset"></i>
+                                        Gọi chăm sóc: 
+                                        <span class="cl-phone"> 1800 6865</span> (Miễn phí)
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fa fa-headset"></i>
+                                        KH Doanh nghiệp: 
+                                        <span class="cl-phone"> 0913 767 797</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="footer">
+                                <h6 class="footer-title">Email liên hệ</h6>
+                                <ul>
+                                  <li>
+                                      Hỗ trợ khách hàng:
+                                    <a href="#">
+                                        <p>
+                                            cskh@phongvu.com
+                                        </p>
+                                    </a>
+                                  </li>
+                                  <li>
+                                      Liên hệ báo giá:
+                                    <a href="#">
+                                        <p>
+                                            baogia@phongvu.com
+                                        </p>
+                                    </a>
+                                  </li>
+                                  <li>
+                                      Hợp tác phát triển:
+                                    <a href="#">
+                                        <p>
+                                            hoptac@phongvu.com
+                                        </p>
+                                    </a>
+                                  </li>
+                                  
+                                </ul>
+                              </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="footer">
+                                <div class="map-ft footer-title">
+                                    <i class="fa fa-map-marked"></i>
+                                    Bản đồ
+                                </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.515057359259!2d106.70035700913938!3d10.771807775089648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f40c7a0f411%3A0xe272a9c70ba4a66e!2zNjUgxJDGsOG7nW5nIEh14buzbmggVGjDumMgS2jDoW5nLCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1623835879069!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pay-ft">
+                            <h6 class="pay-title">Phương thức thanh toán</h6>
+                            <div class="row pay-card">
+                                <a href="#">
+                                    <i class="fa fa-qrcode"></i>
+                                    <div></div>
+                                    QR Code
+                                </a>
+                                <a href="#" class="link-pay">
+                                    <i class="fa fa-money-bill-alt"></i>
+                                    <div></div>
+                                    Tiền mặt
+                                </a>
+                                <a href="#" class="link-pay">
+                                    <i class="fa fa-clock"></i>
+                                    <div></div>
+                                    Trả góp
+                                </a>
+                                <a href="#" class="link-pay">
+                                    <i class="fa fa-credit-card"></i>
+                                    <div></div>
+                                    Internet Banking
+                                </a>
+                            </div>
+                        </div>   
+                        <div class="list-banks pay-title">
+                            <h6>Danh sách các ngân hàng thanh toán online</h6>
+                            <img src="./img/HinhSp/banklist.jpg" alt="Bank" class="img-bank">
+                        </div>                                                     
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="flex-footer">
+                        <div class="left-footer">
+                            <h6>CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ PHONG VŨ</h6>
+                            <p>&#169; 1997 - 2020 Công Ty Cổ Phần Thương Mại - Dịch Vụ Phong Vũ</p>
+                            <p>Giấy chứng nhận đăng ký doanh nghiệp: 03049988358 do Sở KH-ĐT TP.HCM cấp lần đầu ngày 30 tháng 05 năm 2017</p>
+                        </div>
+                        <div class="mid-footer">
+                            <h6>Địa chỉ trụ sở chính:</h6>
+                            <p>Tầng 5, Số 117-119-121 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh</p>
+                            <h6>Văn Phòng điều hành miền bắc:</h6>
+                            <p>Tầng 6, Số 1 Phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội</p>
+                            <h6>Văn phòng điều hành miền Nam:</h6>
+                            <p>Tầng 11 Minh Long Tower, số 17 Bà Huyện Thanh Quan</p>
+                        </div>
+                        <div class="right-footer">
+                            <img src="./img/HinhSp/da-dang-ky.png" alt="error">
+                            <img src="./img/HinhSp/dmca-badge-w100-2x1-02.png" alt="error">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/Pagination/pagi.js"></script>
+    <script src="./js/Pagination/Carouser.js"></script>
+    <script src="./js/components/dungchung.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đăng nhập</title>
+        <link rel="stylesheet" href="./CSS/dangnhap.css">
+        <link rel="stylesheet" href="./FontAwesome/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    </head>
+    <body>
+       <div class="container">
+           <div class="forms-container">
+               <div class="signin-signup">
+                   <form action="#" class="sign-in-form">
+                       <h1>ĐĂNG NHẬP</h1>
+                       <div class="form-control">
+                            <label><i class="fas fa-user"></i>Tên đăng nhập:</label>
+                            <div class="input-field">
+                                <input type="text" name="Username" placeholder="Tên đăng nhập*" data-required="1" required>
+                                <p id="Username"></p>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label><i class="fas fa-lock"></i>Mật khẩu:</label>
+                            <div class="input-field">
+                                <input type="password"  placeholder="Mật khẩu*" >
+                            </div>
+                        </div>
+                    <input type="submit" class="btn solid" value="ĐĂNG NHẬP">
+                    <p class="social-text">Hoặc đăng nhập bằng</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                   </form>
+                    <form  action="#" class="sign-up-form">
+                        <h1>ĐĂNG KÍ TÀI KHOẢN</h1>
+                        <p>Lưu ý nội dung dấu * là bắt buộc nhập</p>
+                        <div class="form-controls">
+                            <label>Tên đăng nhập: </label>
+                            <div class="controls">
+                                <input type="text" name="Username" placeholder="Tên đăng nhập *" data-required="1" required>
+                                <p id="Username"></p>
+                            </div>
+                        </div>
+                        <div class="form-controls">
+                            <label>Email: </label>
+                            <div class="controls">
+                                <input type="text" name="email" id="emailInput" placeholder="Email *" required onblur="onBlurEmail()">
+                                <p id="err-email"></p>
+                            </div>
+                        </div>
+                        <div class="form-controls">
+                            <label>Mật khẩu: </label>
+                            <div class="controls">
+                                <input type="password" name="password" id="passwordInput" placeholder="Mật khẩu *" required onblur="onBlurPassword()"/>
+                                <p id="psw"></p>
+                            </div>
+                        </div>
+                        <div class="form-controls">
+                            <label>Nhập lại mật khẩu: </label>
+                            <div class="controls">
+                                <input type="password" name="password" id="repeatPassword"  placeholder="Nhập lại mật khẩu *" required onblur="onBlurRepeatPassword()"/>
+                                <p id="psw-repeat"></p>
+                            </div>
+                        </div>
+                        <div class="form-controls">
+                            <label>Họ tên: </label>
+                            <div class="controls">
+                                <input type="text" name="Title"  placeholder="Họ tên *" required>
+                                <p id="Title"></p>
+                            </div>
+                        </div>
+                        <div class="form-controls">
+                            <label>Ngày sinh: </label>
+                            <div class="controls">
+                                <input type="text" name="UserBirthDate" id="userDate" placeholder="Ngày/tháng/năm sinh" required />
+                                <p id="UserBirthDate"></p>
+                            </div>
+                        </div>
+                        <div class="form-controls">
+                            <label>Điện thoại: </label>
+                            <div class="controls">
+                                <input type="tel" name="PhoneNumber" id="phoneNumber" placeholder="Điện thoại *" data-required="1" required onblur="onBlurPhone()">
+                                <p id="PhoneNumber"></p>
+                            </div>
+                        </div>
+                        <div class="form-controls">
+                            <label>Địa chỉ: </label>
+                            <div class="controls">
+                                <input type="text" name="Address"  placeholder="Địa chỉ *" data-required="1" required>
+                                <p id="Address"></p>
+                            </div>
+                        </div>
+                       
+                        <input type="submit" class="btn solid" value="ĐĂNG KÍ">
+                        <p class="social-text">Hoặc đăng kí bằng</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+           <div class="panels-container">
+               <div class="panel left-panel">
+                   <div class="content">
+                       <h3>BẠN LÀ THÀNH VIÊN MỚI?</h3>
+                       <button class="btn transparent" id="sign-up-button">ĐĂNG KÍ NGAY</button>
+                   </div>
+                    <img src="./img/Wavy_Gen-01_Single-07.png" alt="hình ảnh" class="image">
+               </div>
+
+               <div class="panel right-panel">
+                    <div class="content">
+                        <h3>BẠN ĐÃ CÓ TÀI KHOẢN?</h3>
+                        <button class="btn transparent" id="sign-in-button" >ĐĂNG NHẬP NGAY</button>
+                    </div>
+                <img src="./img/Wavy_Gen-01_Single-07.png" alt="hình ảnh" class="image">
+                </div>
+           </div>
+       </div>
+        <script type="text/javascript" src="./js/style.js"></script>
+    </body>
+</html>

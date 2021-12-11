@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Phong Vu</title>
+        <link rel="shortcut icon" href="./img/logo.svg"/>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Bootstrap/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="./FontAwesome/docs/css/all.css">
+        <!--Style CSS-->
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/sanpham.css">
+        <link rel="stylesheet" href="./CSS/ripple_loader.css">
+        <link rel="stylesheet" href="./CSS/body.css">
+        <link rel="stylesheet" href="./CSS/media.css">
+        <link rel="stylesheet" href="./CSS/pagination.css">
+		<link rel="stylesheet" href="./CSS/gioHang.css">
+        <link rel="stylesheet" href="./CSS/main.css">
+    
+        <!-- Phần js -->
+        <!-- <script src="/js/goToTop.js" type="text/javascript"></script>
+        <script src="/js/Jquery/Jquery.min.js" type="text/javascript"></script>
+        <script src="/js/sanpham.js" type="text/javascript"></script> -->
+        
+      </head>
+  <body>
+    <header>
+        <div class="header-text-top">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between text-13">
+                    <div class="address-left clearfix d-flex">
+                        <!-- Ripple loader -->
+                        <div class="ripple-loader-wrapper">
+                            <div class="ripple-loader">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <p class="m-0">
+                            <marquee>
+                                HCM: 65 Đường Huỳnh Thúc Kháng, Bến Nghé, Quận 1
+                            </marquee>
+                        </p>
+                    </div>
+                    <div class="text-title">
+                        <a href="#" class="link-text">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <div class="spacer"></div>
+                            <span>Hệ thống Showroom</span>
+                        </a>
+                        <a href="#" class="link-text">
+                            <i class="fa fa-headset"></i>
+                            <div class="spacer"></div>
+                            Tư vấn mua hàng:  
+                            <span class="highlight">1800 6867</span>
+                        </a>
+                        <a href="#" class="link-text">
+                            <i class="fa fa-headset"></i>
+                            <div class="spacer"></div>
+                            CSKH:  
+                            <span class="highlight">1800 6867</span>
+                        </a>
+                        <a href="#" class="link-text">
+                            <i class="fa fa-newspaper"></i>
+                            <div class="spacer"></div>
+                            <span>Tin công nghệ</span>
+                        </a>
+                        <a href="#" class="link-text">
+                            <i class="fa fa-cog fa-spin"></i>
+                            <div class="spacer"></div>
+                            <span>Trung tâm bảo hành</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand navbar-light bg-faded ">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="Phong Vũ" class="logo"/>
+                </a>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-align-justify"></i>
+                        Danh mục sản phẩm
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">
+                        Máy tính xách tay - laptop
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Máy tính - máy chủ
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Thiết bị văn phòng
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Linh kiện máy tính
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Màn hình máy tính
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Gaming Gear
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Tivi - Màn hình TV
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Thiết bị mạng
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Máy ảnh - Máy quay
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Hi-End Gaming
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Phụ kiện laptop - Khác
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Nhà thông minh
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        Giải pháp doanh nghiệp
+                      </a>
+                    </div>
+                  </div>
+                <form class="form-inline my-2 my-lg-0 my-with">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Nhập từ khóa cần tìm">
+                    <button class="btn btn-outline-success my-2 my-sm-0 form-button" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <div class="header-icon-right">
+                    <div class="nav-items items">
+                        <a href="#" class="items-text">
+                            <i class="fas fa-bolt icon-size"></i>
+                            <div></div>
+                            Khuyến mãi
+                        </a>
+                    </div>
+                    <div class="nav-items items">
+                        <a href="#" class="items-text">
+                            <i class="fas fa-bell icon-size"></i>
+                            <div></div>
+                            Thông báo
+                        </a>
+                    </div>
+                    <div class="nav-items items">
+                        <a href="#" class="items-text">
+                            <i class="fas fa-tools icon-size"></i>
+                            <div></div>
+                            Sữa chữa
+                        </a>
+                    </div>
+                    <div class="nav-items items">
+                        <a href="./dangnhap.html" class="items-text">
+                            <i class="fas fa-user-circle icon-size"></i>
+                            <div></div>
+                            Đăng nhập
+                        </a>
+                    </div>
+                    <div class="nav-items items">
+                        <a href="#" class="items-text">
+                            <i class="fas fa-shopping-cart icon-size"></i>
+                            <div></div>
+                            Giỏ hàng
+                        </a>
+                    </div>
+                </div>    
+            </nav>
+        </div>
+    </header>
+    <section class="home-sp">
+        <div class="container">
+            <div class="row">
+                <div class="container icon-link">
+                    <a href="./trangchu.html" class="icon-row">
+                        <i class="fa fa-home"></i>
+                    </a>
+                    <i class="fa fa-angle-right fa-ic"></i>
+                    <span class="tt-sp">
+                        Giỏ hàng
+                    </span>
+                </div>
+            </div>
+            <div class="gio-hang-cart">
+                <div class="mt-4">
+                    <div class="css-card">
+                        <div class="css-body">
+                            <div class="card-body">
+                                <div class="gio-hang">
+                                    <div class="count"></div>
+                                    <ul class="products"></ul>
+                                </div>
+                            </div>
+                            <div class="option-container">
+                                <div class="option-total">
+                                    <div class="giam-gia">
+                                        <h5>Mã giảm giá/ Phiếu mua hàng</h5>
+                                    </div>
+                                    <div class="promotion">
+                                        <div class="input-text">
+                                            <input type="text" id="promo-code" autocomplete="off" placeholder="Nhập mã mua hàng"/>
+                                        </div>
+                                        <div class="btn-promotion">
+                                            <button type="button" class="btn-btn">Áp dụng ngay</button>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Tổng tiền -->
+                                    <div class="summary">
+                                        <div>
+                                            <h5>Thanh toán</h5>
+                                        </div>
+                                        <table class="w-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="tam-tinh">Tạm tính</td>
+                                                    <td class="subtotal">
+                                                        <span></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tam-tinh">VAT</td>
+                                                    <td class="vat">
+                                                        <span></span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="hide">
+                                                    <td>Subtotal</td>
+                                                    <td class="discount">
+                                                        <span></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tam-tinh">Thành tiền</td>
+                                                    <td class="total">
+                                                        <span></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button class="btn-button">THANH TOÁN
+                                            <span class="help">Bạn cần đăng nhập để tiếp tục</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Mã giảm giá -->
+                                
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <div class="infor-customer">
+                                <h4>THÔNG TIN KHÁCH HÀNG:</h4>
+                                <div style="display: flex;">
+                                    <div class="age">
+                                        <input type="radio" name="name-kh">
+                                        <label>Anh</label>
+                                    </div>
+                                    <div class="age">
+                                        <input type="radio" name="name-kh">
+                                        <label>Chị</label>
+                                    </div>
+                                </div>
+                                <div class="name-kh">
+                                    <input maxlength="50" placeholder="Họ và tên"/>
+                                    <input maxlength="50" placeholder="Số điện thoại"/>
+                                </div>
+                                <div class="choosegetgoods">
+                                    <label>Email (Vui lòng điền email để nhận hoá đơn VAT)</label>
+                                    <input type="text" name="billing[email]">
+                                </div>
+                                <div class="choosegetgoods">
+                                    <label>Lưu ý thêm của quý khách</label>
+                                    <input type="text" name="billing[note]">
+                                </div>
+                                <div class="ck-choosegetgoods">
+                                    <input type="checkbox">
+                                    <label>Xuất hoá đơn công ty</label>
+                                    <span> (Vui lòng điền thông tin chính xác)</span>
+                                </div>
+                            </div>
+                            <div class="module">
+                                <h6>- VUI LÒNG CHỌN CÁCH NHẬN HÀNG</h6>
+                                <div class="module-left">
+                                    <div class="left">
+                                        <input type="radio" name="shipping-method">
+                                        <label>Giữ hàng tại cửa hàng</label>
+                                    </div>
+                                    <div class="left">
+                                        <input type="radio" name="shipping-method">
+                                        <label>Giao hàng tận nơi</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section">
+            <div class="box-title-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer">
+                                <h6 class="footer-title">Hỗ trợ khách hàng</h6>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Thẻ ưu đãi
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Trung tâm bảo hành
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Thanh toán và giao hàng
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Dịch vụ sửa chửa và bảo trì
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer">
+                                <h6 class="footer-title">Cộng đồng Phong Vũ</h6>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square"></i>
+                                        Phong Vũ Việt Nam
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                        Phong Vũ Media
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram-square"></i>
+                                        Phong Vũ Instagram
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fa fa-headset"></i>
+                                        Gọi mua hàng: 
+                                        <span class="cl-phone"> 1800 6867</span> (Miễn phí)
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fa fa-headset"></i>
+                                        Gọi chăm sóc: 
+                                        <span class="cl-phone"> 1800 6865</span> (Miễn phí)
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                        <i class="fa fa-headset"></i>
+                                        KH Doanh nghiệp: 
+                                        <span class="cl-phone"> 0913 767 797</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="footer">
+                                <h6 class="footer-title">Email liên hệ</h6>
+                                <ul>
+                                  <li>
+                                      Hỗ trợ khách hàng:
+                                    <a href="#">
+                                        <p>
+                                            cskh@phongvu.com
+                                        </p>
+                                    </a>
+                                  </li>
+                                  <li>
+                                      Liên hệ báo giá:
+                                    <a href="#">
+                                        <p>
+                                            baogia@phongvu.com
+                                        </p>
+                                    </a>
+                                  </li>
+                                  <li>
+                                      Hợp tác phát triển:
+                                    <a href="#">
+                                        <p>
+                                            hoptac@phongvu.com
+                                        </p>
+                                    </a>
+                                  </li>
+                                  
+                                </ul>
+                              </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="footer">
+                                <div class="map-ft footer-title">
+                                    <i class="fa fa-map-marked"></i>
+                                    Bản đồ
+                                </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.515057359259!2d106.70035700913938!3d10.771807775089648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f40c7a0f411%3A0xe272a9c70ba4a66e!2zNjUgxJDGsOG7nW5nIEh14buzbmggVGjDumMgS2jDoW5nLCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1623835879069!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pay-ft">
+                            <h6 class="pay-title">Phương thức thanh toán</h6>
+                            <div class="row pay-card">
+                                <a href="#">
+                                    <i class="fa fa-qrcode"></i>
+                                    <div></div>
+                                    QR Code
+                                </a>
+                                <a href="#" class="link-pay">
+                                    <i class="fa fa-money-bill-alt"></i>
+                                    <div></div>
+                                    Tiền mặt
+                                </a>
+                                <a href="#" class="link-pay">
+                                    <i class="fa fa-clock"></i>
+                                    <div></div>
+                                    Trả góp
+                                </a>
+                                <a href="#" class="link-pay">
+                                    <i class="fa fa-credit-card"></i>
+                                    <div></div>
+                                    Internet Banking
+                                </a>
+                            </div>
+                        </div>   
+                        <div class="list-banks pay-title">
+                            <h6>Danh sách các ngân hàng thanh toán online</h6>
+                            <img src="./img/HinhSp/banklist.jpg" alt="Bank" class="img-bank">
+                        </div>                                                     
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="flex-footer">
+                        <div class="left-footer">
+                            <h6>CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ PHONG VŨ</h6>
+                            <p>&#169; 1997 - 2020 Công Ty Cổ Phần Thương Mại - Dịch Vụ Phong Vũ</p>
+                            <p>Giấy chứng nhận đăng ký doanh nghiệp: 03049988358 do Sở KH-ĐT TP.HCM cấp lần đầu ngày 30 tháng 05 năm 2017</p>
+                        </div>
+                        <div class="mid-footer">
+                            <h6>Địa chỉ trụ sở chính:</h6>
+                            <p>Tầng 5, Số 117-119-121 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh</p>
+                            <h6>Văn Phòng điều hành miền bắc:</h6>
+                            <p>Tầng 6, Số 1 Phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội</p>
+                            <h6>Văn phòng điều hành miền Nam:</h6>
+                            <p>Tầng 11 Minh Long Tower, số 17 Bà Huyện Thanh Quan</p>
+                        </div>
+                        <div class="right-footer">
+                            <img src="./img/HinhSp/da-dang-ky.png" alt="error">
+                            <img src="./img/HinhSp/dmca-badge-w100-2x1-02.png" alt="error">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/Pagination/pagi.js"></script>
+    <script src="./js/Pagination/Carouser.js"></script>
+    <script src="./js/components/gioHang.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

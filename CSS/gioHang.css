@@ -1,0 +1,255 @@
+.css-card {
+    border-radius: 8px;
+    position: relative;
+    align-items: center;
+}
+.card-body {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 32px;
+    width: 67%;
+    margin-right: 20px;
+}
+.card-body .card-img{
+    position: relative;
+    overflow: hidden;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    display: flex;
+    cursor: unset;
+    z-index: 0;
+    margin: auto;
+    border-radius: 0px;
+    padding-bottom: 100%;
+    width: 100%;
+}
+.card-body .card-img .img-gio-hang{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+.tb-gio-hang{
+    color: #848788;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.card-body .trang-chu {
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: 1rem;
+    padding: .365rem .75rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1435C3;
+    border-color: #1435C3;
+    color: #FFFFFF!important;
+    border-style: solid;
+    user-select: none;
+    text-decoration: none;
+    flex-direction: row;
+    position: relative;
+}
+
+.item-gio-hang{
+    display: flex;
+    margin-bottom: 20px;
+}
+.hinh-anh{
+    position: relative;
+    overflow: hidden;
+    flex: 1 0 auto;
+    display: flex;
+    cursor: unset;
+    z-index: 0;
+    margin: auto;
+    border-radius: 0px;
+    border: 1px solid rgb(224, 224, 224);
+    width: 80px;
+    height: 80px !important;
+    margin-right: 5px;
+}
+
+.o-so-luong{
+    flex: 0 0 auto;
+    width: 18.3333%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    flex-direction: column;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+.giaGoc{
+    width: max-content;
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    color: rgb(20, 53, 195);
+    font-weight: bold;
+}
+.giaBan{
+    width: max-content;
+    display: inline-block;
+    text-decoration: line-through;
+    color: rgb(130, 134, 158);
+    font-size: 0.75rem;
+}
+.flex-giaBan{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+.del-gio-hang{
+    color: rgb(0, 90, 171);
+    font-weight: normal;
+    margin-left: 24px;
+    cursor: pointer;
+}
+.css-body{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+}
+.total-card{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    width: 33%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.total-header{
+    
+    position: relative;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.total-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.btn-total{
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(20, 53, 195);
+    border-color: rgb(20, 53, 195);
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    user-select: none;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.help{
+    font-size: 12px;
+    margin-top: 3px;
+}
+.text-total{
+    color: rgb(132, 135, 136);
+    padding: 0px;
+    text-align: left;
+    vertical-align: top;
+}
+.price-total{
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px;
+    text-align: right;
+    vertical-align: top;
+}
+.width-total{
+    width: 100%;
+}
+.p-price{
+    color: rgb(235, 33, 1);
+    font-size: 1.25rem;
+    font-weight: 700;
+    vertical-align: bottom;
+    padding: 0px;
+}
+.customer{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    margin: 20px 0px;
+    width: 100%;
+}
+.age {
+    margin:0px 20px 0px 0px;
+}
+.name-kh{
+    display: flex;
+}
+.name-kh input{
+    display: block;
+    overflow: hidden;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    padding: 10px;
+    color: #333;
+    box-sizing: border-box;
+    margin-right: 20px;
+    width: 50%;
+}
+.choosegetgoods{
+    display: flex;
+    flex-direction: column;
+}
+.choosegetgoods label{
+    margin-top: 10px;
+}
+.choosegetgoods input{
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    padding: 10px;
+    color: #333;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.ck-choosegetgoods{
+    margin-top: 5px;
+}
+.ck-choosegetgoods span{
+    font-style: italic;
+    font-size: 11px;
+    margin-left: 50px;
+}
+.module h6{
+    margin: 20px 0px;
+}
+.module-left{
+    display: flex;
+}
+.left{
+    margin-right: 20px;
+}
